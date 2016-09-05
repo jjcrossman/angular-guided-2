@@ -6,21 +6,3 @@
 
 // step 5 once everything is setup make sure you are binding the values of the arrays to $scope in your controller
 
-myApp.service('ourSvc', function() {
-
-    this.reallyLike = [];
-    this.kindOfLike = [];
-
-    this.addNewArtist = function (artistObj) {
-        console.log(artistObj);
-        if(artistObj.score >= 50 ) {
-            this.reallyLike.push(artistObj);
-
-        } else if (artistObj.score < 50 ) {
-            this.kindOfLike.push(artistObj);
-
-        }
-
-    };
-
-});
